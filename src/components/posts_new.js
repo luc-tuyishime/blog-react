@@ -35,6 +35,7 @@ class PostsNew extends Component{
    const { handleSubmit } = this.props;
 
    return(
+     <div className="container">
      <form onSubmit={handleSubmit(this.onSubmit.bind(this))}>
          <Field
           label="Title For Post"
@@ -54,6 +55,7 @@ class PostsNew extends Component{
         <button type="submit" className="btn btn-primary">Save</button>
         <Link to="/" className="btn btn-danger" >Cancel</Link>
      </form>
+   </div>
    );
   }
 }
